@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { RegistryComponent } from './registry/registry.component';
+import { PortlandLinksComponent } from './portland-links/portland-links.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    RegistryComponent,
+    PortlandLinksComponent
   ],
   imports: [
     BrowserModule,
