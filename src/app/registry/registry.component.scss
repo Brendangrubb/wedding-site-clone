@@ -1,3 +1,13 @@
+$font1: eaves;
+$font2: bodoni;
+
 .registry-body {
   text-align: center;
+}
+
+.pone {
+  font-family: $font1;
+}
+.ptwo {
+  font-family: $font2;
 }

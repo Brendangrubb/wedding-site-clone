@@ -1,0 +1,12 @@
+$font1: eaves;
+$font2: bodoni;
+
+@font-face {
+  font-family: eaves;
+  src: url('./assets/fonts/MrsEavesPetiteCaps_PetiteCaps.ttf');
+}
+
+@font-face {
+  font-family: bodoni;
+  src: url('./assets/fonts/bodoni-italic.otf');
+}
