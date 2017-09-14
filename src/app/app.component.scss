@@ -2,20 +2,29 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
+
+// .bottom-holly:hover {
+//   background-color: black;
+// }
 
 .top-holly {
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: -1;
 }
 
 .content-buffer {
-  margin: 15%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 70vh;
+  padding: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 92vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
   overflow-y: scroll;
+  border: 1px solid black;
 }
 
 .relpos {

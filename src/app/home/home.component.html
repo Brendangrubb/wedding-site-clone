@@ -1,37 +1,52 @@
 <div class="home-body">
   <div class="title">
-    <p>Samantha</p>
-    <p>&</p>
+    <br>
     <p>Brendan</p>
+    <p>&</p>
+    <p>Samantha</p>
   </div>
-  <div class="title-two">
+  <div class="title-three">
     <p>
-      Are Getting Married!
+      are getting married!
     </p>
   </div>
-  <p>December 2nd 2017</p>
-  <p>Festivities begin at 5PM</p>
-  <p>The Village Ballroom</p>
-  <p>704 NE Dekum St</p>
+  <div class="info-one">
+    <p>December 2nd 2017</p>
+    <p>Festivities begin at 5PM</p>
+    <p>The Village Ballroom</p>
+    <p>704 NE Dekum St</p>
+  </div>
 </div>
 
-<br><br>
+<br><br><br>
 
 <div class="home-rsvp">
-  <p>RSVP</p>
-  <p>by November 1st 2017</p>
-  <form class="" action="index.html" method="post">
-    <div class="checkbox">
-      <label for="accept"><input type="checkbox" name="accept" value="accept">Happily Accept</label>
-    </div>
-    <div class="checkbox">
-      <label for="decline"><input type="checkbox" name="decline" value="accept">Regretfully Decline</label>
-    </div>
-    <div class="form-group">
-      <label for="guests">Number of Guests Attending</label>
-      <input type="number" name="adults" value="adults" placeholder="Adults">
-      <input type="number" name="children" value="children" placeholder="Children">
-    </div>
-    <button class="btn btn-success" type="submit" name="rsvp">Engage!</button>
-  </form>
+  <div class="title">
+    <p>R S V P</p>
+  </div>
+  <div class="title-two">
+    <p>by November 1st 2017</p>
+  </div>
+  <div class="info-one">
+    <form class="" action="index.html" method="post">
+      <div class="checkbox">
+        <label for="accept"><input type="checkbox" name="accept" value="accept">Happily Accept</label>
+      </div>
+      <div class="checkbox">
+        <label for="decline"><input type="checkbox" name="decline" value="accept">Regretfully Decline</label>
+      </div>
+      <div class="form-group">
+        <label>Number of Guests Attending</label>
+        <label for="adults">adults</label>
+        <br>
+        <input class="attending" type="number" name="adults" value="adults">
+        <br>
+        <label for="children">children</label>
+        <br>
+        <input class="attending" type="number" name="children" value="children">
+      </div>
+      <button routerLink="registry" class="btn btn-success" type="submit" name="rsvp">Engage!</button>
+    </form>
+    <br>
+  </div>
 </div>
