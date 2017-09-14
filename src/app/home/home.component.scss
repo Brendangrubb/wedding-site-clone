@@ -1,5 +1,6 @@
 $font1: eaves;
 $font2: bodoni;
+$berry: #E7AFB5;
 
 
 .home-body {
@@ -34,4 +35,9 @@ $font2: bodoni;
 .attending {
   max-width: 50px;
   border-radius: 5px;
+}
+
+.btn {
+  font-size: 1em;
+  background-color: $berry;
 }

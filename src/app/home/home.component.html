@@ -1,6 +1,5 @@
 <div class="home-body">
   <div class="title">
-    <br>
     <p>Brendan</p>
     <p>&</p>
     <p>Samantha</p>
@@ -30,22 +29,22 @@
   <div class="info-one">
     <form class="" action="index.html" method="post">
       <div class="checkbox">
-        <label for="accept"><input type="checkbox" name="accept" value="accept">Happily Accept</label>
+        <label for="accept"><input #accept id="accepted" type="checkbox" name="accept" value="accept">Happily Accept</label>
       </div>
       <div class="checkbox">
-        <label for="decline"><input type="checkbox" name="decline" value="accept">Regretfully Decline</label>
+        <label for="decline"><input #decline id="declined" type="checkbox" name="decline" value="decline">Regretfully Decline</label>
       </div>
       <div class="form-group">
         <label>Number of Guests Attending</label>
         <label for="adults">adults</label>
         <br>
-        <input class="attending" type="number" name="adults" value="adults">
+        <input #adults class="attending" type="number" name="adults" value="adults">
         <br>
         <label for="children">children</label>
         <br>
-        <input class="attending" type="number" name="children" value="children">
+        <input #children class="attending" type="number" name="children" value="children">
       </div>
-      <button routerLink="registry" class="btn btn-success" type="submit" name="rsvp">Engage!</button>
+      <button (click)="sendRsvp(accept.value,decline.value,adults.value,children.value)" class="btn btn-lg" type="submit" name="rsvp">Submit</button>
     </form>
     <br>
   </div>

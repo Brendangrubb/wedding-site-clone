@@ -13,4 +13,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  sendRsvp(accept,decline,adults,children){
+      console.log(accept);
+      console.log(decline);
+      console.log(adults);
+      console.log(children);
+  }
+
 }
