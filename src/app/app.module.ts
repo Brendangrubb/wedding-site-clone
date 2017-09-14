@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistryComponent } from './registry/registry.component';
 import { PortlandLinksComponent } from './portland-links/portland-links.component';
+import { RsvpReceivedComponent } from './rsvp-received/rsvp-received.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RegistryComponent,
-    PortlandLinksComponent
+    PortlandLinksComponent,
+    RsvpReceivedComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { routing } from '.././app.routing';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -8,16 +9,19 @@ import { routing } from '.././app.routing';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
 
   sendRsvp(accept,decline,adults,children){
-      console.log(accept);
-      console.log(decline);
-      console.log(adults);
-      console.log(children);
+    console.log(accept);
+    console.log(decline);
+    console.log(adults);
+    console.log(children);
+    this.router.navigate(['rsvp-received']);
   }
 
 }

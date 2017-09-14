@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PortlandLinksComponent } from './portland-links/portland-links.component';
 import { RegistryComponent } from './registry/registry.component';
+import { RsvpReceivedComponent } from './rsvp-received/rsvp-received.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'registry',
     component: RegistryComponent
+  },
+  {
+    path: 'rsvp-received',
+    component: RsvpReceivedComponent
   }
 
 
