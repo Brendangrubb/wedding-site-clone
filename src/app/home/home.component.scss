@@ -2,6 +2,7 @@ $font1: eaves;
 $font2: bodoni;
 $berry: #E7AFB5;
 $break1: 750px;
+$break2: 1275px;
 
 
 .home-body {
@@ -63,9 +64,32 @@ $break1: 750px;
   background-color: $berry;
 }
 
+
+// MQ Spacers and Replacers
+
 .break-spacer {
   display: none;
   @media screen and (min-width: $break1) {
     display: unset;
+  }
+}
+
+.break-spacer-two {
+  display: none;
+  @media screen and (min-width: $break2) {
+    display: unset;
+  }
+}
+
+.title-no-breaks {
+  display: none;
+  @media screen and (min-width: $break2) {
+    display: unset;
+  }
+}
+
+.title-with-breaks {
+  @media screen and (min-width: $break2) {
+    display: none;
   }
 }
