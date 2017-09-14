@@ -1,1 +1,7 @@
+.home-body {
+  text-align: center;
+}
 
+.home-rsvp {
+  @extend .home-body;
+}
