@@ -1,13 +1,70 @@
 $font1: eaves;
 $font2: bodoni;
+$berry: #E7AFB5;
+$break1: 750px;
+$break2: 1275px;
+$break3: 605px;
+
 
 .registry-body {
   text-align: center;
+  font-family: eaves;
+  margin-left: 5%;
+  margin-right: 5%;
+  @media screen and (min-width: $break1) {
+    letter-spacing: .1em;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
 }
 
-.pone {
-  font-family: $font1;
+.title {
+  font-size: 3.5em;
+  line-height: .7em;
+  font-weight: 250;
+
+  @media screen and (min-width: $break1) {
+    font-size: 4.1em;
+    letter-spacing: .1em;
+  }
+
+  @media screen and (min-width: $break2) {
+    font-size: 5em;
+    letter-spacing: .1em;
+  }
 }
-.ptwo {
-  font-family: $font2;
+
+.title-two {
+  font-size: 1.75em;
+  line-height: 1em;
+  // font-weight: 300;
+
+  @media screen and (min-width: $break2) {
+    font-size: 2.1em;
+    letter-spacing: .1em;
+  }
+
+  @media screen and (min-width: $break2) {
+    font-size: 2.5em;
+    letter-spacing: .1em;
+  }
+}
+
+.title-three {
+  font-size: 2.7em;
+  font-weight: 300;
+
+  @media screen and (min-width: $break2) {
+    font-size: 2.8em;
+    letter-spacing: .1em;
+  }
+}
+
+// MQ Spacers
+
+.break-spacer {
+  display: none;
+  @media screen and (min-width: $break3) {
+    display: unset;
+  }
 }
