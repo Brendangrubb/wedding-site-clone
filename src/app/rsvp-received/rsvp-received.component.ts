@@ -8,9 +8,19 @@ import { Router } from '@angular/router';
 })
 export class RsvpReceivedComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  goToPortland(){
+    this.router.navigate(['portland-links']);
+  }
+
+  goToRegistry(){
+    this.router.navigate(['registry']);
   }
 
 }
