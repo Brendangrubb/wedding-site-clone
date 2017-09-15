@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-interface Response {
-    db: string;
+interface RadioResponse {
+    respForDb: string;
     name: string;
 }
 
@@ -13,21 +13,21 @@ interface Response {
 })
 export class HomeComponent implements OnInit {
 
-  public response: Response[];
-  public radioValue: Response;
+  public radioResponse: RadioResponse[];
+  public radioValue: RadioResponse;
 
   constructor(
     private router: Router
   ) {
     this.radioValue = null;
-    this.response =
+    this.radioResponse =
     [
       {
-        db: "yes",
+        respForDb: "yes",
         name: "Happily Accept"
       },
       {
-        db: "no",
+        respForDb: "no",
         name: "Regretfully Decline"
       }
     ];
@@ -40,7 +40,8 @@ export class HomeComponent implements OnInit {
 
     console.log(adults);
     console.log(children);
-    console.log(this.radioValue.db)
+    console.log(this.radioValue.respForDb)
+    console.log(this.radioValue.name)
     // this.router.navigate(['rsvp-received']);
   }
 

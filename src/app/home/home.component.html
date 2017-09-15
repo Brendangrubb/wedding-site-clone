@@ -38,15 +38,15 @@
   <div class="info-one">
     <form class="" action="index.html" method="post">
 
-      <template ngFor let-response [ngForOf]="response">
+      <template ngFor let-radioResponse [ngForOf]="radioResponse">
         <label>
           <input
             type="radio"
             name="response-group"
-            [checked]="( radioValue === response )"
-            (change)="radioValue = response;"
+            [checked]="( radioValue === radioResponse )"
+            (change)="radioValue = radioResponse;"
           />
-          {{ response.name }}
+          {{ radioResponse.name }}
         </label>
         <br>
       </template>
