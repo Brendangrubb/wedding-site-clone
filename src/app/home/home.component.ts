@@ -24,4 +24,12 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['rsvp-received']);
   }
 
+  goToPortland(){
+    this.router.navigate(['portland-links']);
+  }
+
+  goToRegistry(){
+    this.router.navigate(['registry']);
+  }
+
 }

@@ -1,6 +1,8 @@
 $font1: eaves;
 $font2: bodoni;
 $berry: #E7AFB5;
+$darkLeaf: #729051;
+$lightLeaf: #CBD391;
 $break1: 750px;
 $break2: 1275px;
 
@@ -11,6 +13,10 @@ $break2: 1275px;
 }
 
 .home-rsvp {
+  @extend .home-body;
+}
+
+.home-links {
   @extend .home-body;
 }
 
@@ -59,9 +65,27 @@ $break2: 1275px;
   border-radius: 5px;
 }
 
-.btn {
+.btn-submit {
   font-size: 1em;
   background-color: $berry;
+}
+
+.btn-portland {
+  font-size: 1em;
+  background-color: $darkLeaf;
+  margin: 5px;
+  @media screen and (min-width: $break1){
+    font-size: 2em;
+  }
+}
+
+.btn-registry {
+  font-size: 1em;
+  background-color: $lightLeaf;
+  margin: 5px;
+  @media screen and (min-width: $break1){
+    font-size: 2em;
+  }
 }
 
 

@@ -62,8 +62,24 @@
         </div>
 
       </div>
-      <button (click)="sendRsvp(accept.value,decline.value,adults.value,children.value)" class="btn btn-lg" type="submit" name="rsvp">Submit</button>
+      <button (click)="sendRsvp(accept.value,decline.value,adults.value,children.value)" class="btn btn-lg btn-submit" type="submit" name="rsvp">Submit</button>
     </form>
     <br>
   </div>
+</div>
+
+<div class="home-links">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <button (click)="goToPortland()" class="btn btn-lg btn-portland" type="submit" name="portland-links">Portland Activities</button>
+    </div>
+    <div class="col-md-4">
+      <button (click)="goToRegistry()" class="btn btn-lg btn-registry" type="submit" name="portland-links">Registry Information</button>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <br><br>
+
 </div>

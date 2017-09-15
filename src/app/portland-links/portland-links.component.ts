@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { routing } from '.././app.routing';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-portland-links',
@@ -8,9 +9,19 @@ import { routing } from '.././app.routing';
 })
 export class PortlandLinksComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  goToRsvp(){
+    this.router.navigate(['']);
+  }
+
+  goToRegistry(){
+    this.router.navigate(['registry']);
   }
 
 }

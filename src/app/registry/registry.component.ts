@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { routing } from '.././app.routing';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registry',
@@ -8,9 +8,18 @@ import { routing } from '.././app.routing';
 })
 export class RegistryComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  goToPortland(){
+    this.router.navigate(['portland-links']);
+  }
+
+  goToRsvp(){
+    this.router.navigate(['']);
+  }
 }
