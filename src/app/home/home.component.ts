@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+interface Response {
+    db: string;
+    name: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -9,19 +13,35 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  public response: Response[];
+  public radioValue: Response;
+
   constructor(
     private router: Router
-  ) { }
+  ) {
+    this.radioValue = null;
+    this.response =
+    [
+      {
+        db: "yes",
+        name: "Happily Accept"
+      },
+      {
+        db: "no",
+        name: "Regretfully Decline"
+      }
+    ];
+   }
 
   ngOnInit() {
   }
 
-  sendRsvp(accept,decline,adults,children){
-    console.log(accept);
-    console.log(decline);
+  sendRsvp(adults,children){
+
     console.log(adults);
     console.log(children);
-    this.router.navigate(['rsvp-received']);
+    console.log(this.radioValue.db)
+    // this.router.navigate(['rsvp-received']);
   }
 
   goToPortland(){
