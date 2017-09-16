@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendRsvp(adults,children){
-    var newResponse = new Response(this.radioValue.respForDb,adults,children);
+  sendRsvp(guestName,adults,children){
+    var newResponse = new Response(guestName,this.radioValue.respForDb,adults,children);
     console.log(newResponse);
     this.responseService.addResponse(newResponse);
     // this.router.navigate(['rsvp-received']);

@@ -36,7 +36,13 @@
     <p>by November 1st 2017</p>
   </div>
   <div class="info-one">
-    <form class="" action="index.html" method="post">
+    <form>
+      <div class="form-group">
+        <label>name</label>
+        <div class="nameInput">
+          <input #guestName type="text" class="form-control">
+        </div>
+      </div>
 
       <template ngFor let-radioResponse [ngForOf]="radioResponse">
         <label>
@@ -70,7 +76,7 @@
         </div>
 
       </div>
-      <button (click)="sendRsvp(adults.value,children.value)" class="btn btn-lg btn-submit" type="submit" name="rsvp">R S V P</button>
+      <button (click)="sendRsvp(guestName.value,adults.value,children.value)" class="btn btn-lg btn-submit" type="submit" name="rsvp">R S V P</button>
     </form>
     <br>
   </div>
