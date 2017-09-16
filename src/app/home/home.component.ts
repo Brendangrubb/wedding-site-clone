@@ -45,9 +45,12 @@ export class HomeComponent implements OnInit {
 
   sendRsvp(guestName,adults,children){
     var newResponse = new Response(guestName,this.radioValue.respForDb,adults,children);
-    console.log(newResponse);
+    if (guestName === "") {
+      alert("Please enter your name");
+    } else {
     this.responseService.addResponse(newResponse);
     this.router.navigate(['rsvp-received']);
+    }
   }
 
   goToPortland(){
