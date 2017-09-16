@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     var newResponse = new Response(guestName,this.radioValue.respForDb,adults,children);
     console.log(newResponse);
     this.responseService.addResponse(newResponse);
-    // this.router.navigate(['rsvp-received']);
+    this.router.navigate(['rsvp-received']);
   }
 
   goToPortland(){
