@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Response } from './../response.model';
 import { ResponseService} from './../response.service';
 
+
 interface RadioResponse {
     respForDb: string;
     name: string;
@@ -23,7 +24,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private responseService: ResponseService
+    private responseService: ResponseService,
   ) {
     this.radioValue = null;
     this.radioResponse =
@@ -43,11 +44,9 @@ export class HomeComponent implements OnInit {
   }
 
   sendRsvp(adults,children){
-
-    console.log(adults);
-    console.log(children);
-    console.log(this.radioValue.respForDb)
-    console.log(this.radioValue.name)
+    var newResponse = new Response(this.radioValue.respForDb,adults,children);
+    console.log(newResponse);
+    this.responseService.addResponse(newResponse);
     // this.router.navigate(['rsvp-received']);
   }
 
