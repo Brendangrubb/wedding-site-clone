@@ -17,4 +17,8 @@ export class ResponseService {
     this.responses.push(newResponse);
   }
 
+  getResponses() {
+    return this.responses;
+  }
+
 }
