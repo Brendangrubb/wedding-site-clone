@@ -1,0 +1,56 @@
+$font1: eaves;
+$font2: bodoni;
+$brightLeaf: #8DBD5B;
+$darkLeaf: #729051;
+$lightLeaf: #CBD391;
+$break1: 750px;
+$break1: 750px;
+$break2: 1275px;
+$break3: 605px;
+
+
+.admin-body {
+  text-align: center;
+  font-family: eaves;
+  margin-left: 7%;
+  margin-right: 7%;
+  @media screen and (min-width: $break1) {
+    letter-spacing: .1em;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-family: eaves;
+  font-size: 2em;
+  line-height: .7em;
+  font-weight: 250;
+
+  @media screen and (min-width: $break1) {
+    font-size: 3.5em;
+    letter-spacing: .1em;
+  }
+}
+
+.table-border {
+  // margin-left: 10%;
+  margin-right: 15%;
+}
+
+// MQ Spacers and Replacers
+
+.break-spacer {
+  display: none;
+  @media screen and (min-width: $break1) {
+    display: unset;
+  }
+}
+
+.break-spacer-two {
+  display: none;
+  @media screen and (min-width: $break2) {
+    display: unset;
+  }
+}
