@@ -75,9 +75,11 @@
           </div>
           <div class="col-md-3"></div>
         </div>
-
       </div>
-      <button (click)="sendRsvp(guestName.value,adults.value,children.value)" class="btn btn-lg btn-submit" type="submit" name="rsvp">R S V P</button>
+      <div class="form-group">
+        <textarea #message name="message" rows="2" cols="40" placeholder="Feel free to add a message to Samantha and Brendan here."></textarea>
+      </div>
+      <button (click)="sendRsvp(guestName.value,adults.value,children.value,message.value)" class="btn btn-lg btn-submit" type="submit" name="rsvp">R S V P</button>
     </form>
     <br>
   </div>

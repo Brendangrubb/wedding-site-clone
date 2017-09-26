@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendRsvp(guestName,adults,children){
-    var newResponse = new Response(guestName,this.radioValue.respForDb,adults,children);
+  sendRsvp(guestName,adults,children,message){
+    var newResponse = new Response(guestName,this.radioValue.respForDb,adults,children,message);
     if (guestName === "") {
       alert("Please enter your name");
     } else {

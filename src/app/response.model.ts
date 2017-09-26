@@ -4,5 +4,6 @@ export class Response {
     public attending: string,
     public adults: string,
     public children: string,
+    public message: string
   ) { }
 }
