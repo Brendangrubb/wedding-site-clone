@@ -34,6 +34,16 @@ $break3: 605px;
   }
 }
 
+.main {
+  text-align: center;
+  font-family: eaves;
+  font-size: 1.4em;
+
+  @media screen and (min-width: $break1) {
+    font-size: 2em;
+  }
+}
+
 .table-border {
   // margin-left: 10%;
   margin-right: 15%;
