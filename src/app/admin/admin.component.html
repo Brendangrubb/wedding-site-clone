@@ -9,6 +9,7 @@
     <thead>
       <tr>
         <th class="admin-body">Guest</th>
+        <th class="admin-body">Message</th>
         <th class="admin-body">Attending</th>
         <th class="admin-body">Adults</th>
         <th class="admin-body">Children</th>
@@ -16,6 +17,7 @@
     </thead>
     <tr *ngFor="let response of responses | async">
       <td>{{response.guestName}}</td>
+      <td>{{response.message}}</td>
       <td>{{response.attending}}</td>
       <td>{{response.adults}}</td>
       <td>{{response.children}}</td>
