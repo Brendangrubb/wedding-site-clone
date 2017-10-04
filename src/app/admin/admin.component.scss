@@ -64,3 +64,17 @@ $break3: 605px;
     display: unset;
   }
 }
+
+.btn-home {
+  font-size: 1em;
+  font-family: eaves;
+  background-color: $lightLeaf;
+  margin: 5px;
+  @media screen and (min-width: $break1){
+    font-size: 2em;
+  }
+}
+
+.center {
+  text-align: center;
+}

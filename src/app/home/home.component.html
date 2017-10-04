@@ -1,11 +1,11 @@
 <div class="home-body">
   <div class="title title-with-breaks">
-    <p>Brendan</p>
+    <p>George</p>
     <p>&</p>
-    <p>Samantha</p>
+    <p>Mabel</p>
   </div>
   <div class="title title-no-breaks">
-    <p>Brendan & Samantha</p>
+    <p>George & Mabel</p>
   </div>
   <div class="title-three">
     <p>
@@ -13,10 +13,10 @@
     </p>
   </div>
   <div class="info-one">
-    <p>December 2nd 2017</p>
+    <p>June 26nd 2017</p>
     <p>Festivities begin at 5PM</p>
-    <p>The Village Ballroom</p>
-    <p>704 NE Dekum St</p>
+    <p> Doghouse Brewery</p>
+    <p>14 NE Dexter Ave</p>
   </div>
 </div>
 
@@ -33,7 +33,7 @@
     <p>R S V P</p>
   </div>
   <div class="title-two">
-    <p>by November 1st 2017</p>
+    <p>by May 20th 2017</p>
   </div>
   <div class="info-one">
 
@@ -77,7 +77,7 @@
         </div>
       </div>
       <div class="form-group">
-        <textarea #message name="message" class="message-text" rows="2" cols="35" placeholder="Add a message for Samantha and Brendan"></textarea>
+        <textarea #message name="message" class="message-text" rows="2" cols="35" placeholder="Add a message for Mabel and George"></textarea>
       </div>
       <button (click)="sendRsvp(guestName.value,adults.value,children.value,message.value)" class="btn btn-lg btn-submit" type="submit" name="rsvp">R S V P</button>
     </form>
@@ -88,13 +88,24 @@
 <div class="home-links">
   <div class="row">
     <div class="col-md-2"></div>
+
     <div class="col-md-4">
       <button (click)="goToPortland()" class="btn btn-lg btn-portland" type="submit" name="portland-links">Portland Activities</button>
     </div>
+
     <div class="col-md-4">
       <button (click)="goToRegistry()" class="btn btn-lg btn-registry" type="submit" name="portland-links">Registry Information</button>
     </div>
+
     <div class="col-md-2"></div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button (click)="goToAdmin()" class="btn btn-lg btn-registry" type="submit" name="portland-links">Admin</button>
+    </div>
+    <div class="col-md-4"></div>
   </div>
 
   <br><br>

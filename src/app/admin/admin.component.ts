@@ -27,4 +27,8 @@ export class AdminComponent implements OnInit {
     this.responses = this.responseService.getResponses();
   }
 
+  goToHome(){
+    this.router.navigate(['']);
+  }
+
 }
