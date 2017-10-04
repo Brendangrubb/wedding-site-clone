@@ -1,6 +1,6 @@
 import { SabWeddingSitePage } from './app.po';
 
-describe('sab-wedding-site App', () => {
+describe('wedding-site-clone App', () => {
   let page: SabWeddingSitePage;
 
   beforeEach(() => {
